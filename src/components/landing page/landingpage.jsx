@@ -12,6 +12,7 @@ const LandingPage = () => {
             <br />
             <ReactTyped
               strings={[
+                "MernStack Developer",
                 "Web developer",
                 "Front-end Developer",
                 "Software Developer",

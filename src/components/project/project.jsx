@@ -41,7 +41,7 @@ const Project = () => {
             <div className="Details">
               <h3>My Portfolio</h3>
               <a
-                href="https://github.com/sahil1962/OyeeCarAutomobile"
+                href="https://my-portfolio-fyf2.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -59,7 +59,7 @@ const Project = () => {
             <div className="Details">
               <h3>Deaf & Mute Communication</h3>
               <a
-                href="https://github.com/sahil1962/EnergyManagementSystem"
+                // href="https://github.com/sahil1962/EnergyManagementSystem"
                 target="_blank"
                 rel="noopener noreferrer"
               >
