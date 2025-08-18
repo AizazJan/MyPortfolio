@@ -1,7 +1,7 @@
 import "./project.css";
-import ComplySimplify from "../../assets/Projects/ComplySimplify.png";
-import OyeeCar from "../../assets/Projects/OyeeCar.png";
-import EMS from "../../assets/Projects/EMS.png";
+import ComplySimplify from "../../assets/Projects/Restoran.png";
+import OyeeCar from "../../assets/Projects/my portfolio.png";
+import EMS from "../../assets/Projects/Deaf .png";
 
 const Project = () => {
   return (
