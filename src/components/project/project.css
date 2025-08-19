@@ -29,10 +29,10 @@
 
 .Project .background .ParentDiv {
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 8%;
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 88vw;
     /* height: max-content; */
     justify-content: space-between;
 
@@ -142,7 +142,7 @@
 
     .Project .background .ParentDiv {
         margin-top: 5%;
-        margin-left: 10%;
+        margin-left: 6%;
         display: flex;
         flex-direction: column;
         /* width: 80vw; */
@@ -153,8 +153,8 @@
     }
 
     .Project .background .ParentDiv .ChildDivs {
-        margin: 5%;
-        width: max-content;
+        margin: 5% 0;
+        width: 88vw;
         /* height: 40vh; */
         height: max-content;
         display: flex;
@@ -165,7 +165,7 @@
 
     .Project .background .ParentDiv .ChildDivs .Photo .ProjectImage {
         width: 100%;
-        height: 11vh;
+        height: auto;
         opacity: 50%;
         transition: all 1s;
 

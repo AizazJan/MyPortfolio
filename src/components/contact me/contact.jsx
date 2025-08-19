@@ -96,7 +96,7 @@ const Contact = () => {
             >
               BACK TO TOP
             </div>
-            <div className="SocialMedia">
+            <div className="SocialMedia" aria-label="Social media links">
               <a
                 href="mailto:aizaz.janjj@gmail.com"
                 target="_blank"

@@ -30,16 +30,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" role="navigation" aria-label="Main Navigation">
       <div className="container">
         
 
-        <div className="menu-icon" onClick={handleShowNavbar}>
+        <div className="menu-icon" onClick={handleShowNavbar} aria-label="Toggle menu" aria-expanded={showNavbar} aria-controls="primary-navigation">
           <FontAwesomeIcon icon={showNavbar ? faBarsStaggered : faBars} />
         </div>
 
-        <div className={`nav-elements ${showNavbar && "active"}`}>
-          <ul>
+        <div className={`nav-elements ${showNavbar && "active"}`} id="primary-navigation">
+          <ul onClick={() => setShowNavbar(false)}>
             <li>
               <a href="#LandingPage">Home</a>
             </li>

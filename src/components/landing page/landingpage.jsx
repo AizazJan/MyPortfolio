@@ -36,7 +36,7 @@ const LandingPage = () => {
           </div>
 
           <div className="contentprofile">
-            <img className="profile" src={Profile} alt="Logo" />
+            <img className="profile" src={Profile} alt="Profile" />
           </div>
         </div>
       </div>

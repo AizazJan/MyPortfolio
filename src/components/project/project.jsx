@@ -15,7 +15,7 @@ const Project = () => {
         <div className="ParentDiv">
           <div className="ChildDivs">
             <div className="Photo">
-              <img className="ProjectImage" src={ComplySimplify} alt="Logo" />
+              <img className="ProjectImage" src={ComplySimplify} alt="Restoran project screenshot" />
             </div>
             <div className="Technology">
               <p>HTML, CSS, JavaScript</p>
@@ -33,7 +33,7 @@ const Project = () => {
           </div>
           <div className="ChildDivs">
             <div className="Photo">
-              <img className="ProjectImage" src={OyeeCar} alt="Logo" />
+              <img className="ProjectImage" src={OyeeCar} alt="Portfolio project screenshot" />
             </div>
             <div className="Technology">
               <p>HTML, CSS, JavaScript, TypeScript, React</p>
@@ -51,7 +51,7 @@ const Project = () => {
           </div>
           <div className="ChildDivs">
             <div className="Photo">
-              <img className="ProjectImage" src={EMS} alt="Logo" />
+              <img className="ProjectImage" src={EMS} alt="Deaf & Mute Communication project screenshot" />
             </div>
             <div className="Technology">
               <p>HTML , CSS , JavaScript , TYPESCRIPT , REACT , MONGODB </p>

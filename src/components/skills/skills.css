@@ -6,7 +6,7 @@
 
 
 .Skills .background {
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(-60deg, #000000 50%, #160514 50%);
     color: aliceblue;
 }
@@ -183,6 +183,7 @@
         color: #ffffff;
         display: flex;
         flex-direction: column;    
+        gap: 16px;
     }
 
         

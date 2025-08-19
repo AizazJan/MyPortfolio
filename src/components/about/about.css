@@ -29,8 +29,8 @@
 
 .About .background .contentDiv {
     margin-top: 20vh;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     justify-content: right;
     padding: 2vh;
 }
@@ -66,13 +66,13 @@
 
     .About .background .contentDiv {
         margin-top: 8vh;
-        margin-left: 2vw;
-        margin-right: 2vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 
     .About .background .aboutContent {
         color: rgb(255, 255, 255);
-        font-size: x-large;
+        font-size: large;
     }
     
 }
