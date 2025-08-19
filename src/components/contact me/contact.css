@@ -4,75 +4,67 @@
     font-family: "Fira Code", monospace;
 }
 
-
 .Contact .background {
     min-height: 100vh;
-    background-image: linear-gradient(-60deg, #000000 50%, #160514 50%);
+    background: linear-gradient(-60deg, #000000 50%, #160514 50%);
     color: aliceblue;
+    position: relative;
+    z-index: 1;   /* ✅ ensures it's above previous sections */
+    overflow: hidden;
 }
 
+/* ✅ Heading with flex for cleaner alignment */
 .Contact .background .heading {
     padding-top: 7%;
     padding-left: 10%;
-    font-size: x-large;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .Contact .background .heading .line {
     background-color: #ee7f19;
-    width: max-content;
     height: 4px;
-    padding-left: 15%;
-    margin-left: 15%;
-    margin-top: -1.2%;
+    width: 60px;
+    margin-top: 8px;
 }
 
 .Contact .background .ParentDiv {
-    height: auto;
-    /* border-style: dashed;
-    color: rgb(17, 201, 35); */
-
     margin: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
-
 }
 
 .Contact .background .ParentDiv .ContactDiv {
-    height: max-content;
-    /* border-style: dashed;
-    color: rgb(255, 0, 0); */
     padding: 5% 2%;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    display: flex;
+    flex-wrap: wrap;   /* ✅ prevents text from overlapping */
     gap: 24px;
     align-items: start;
 }
 
+/* ✅ Content text scaling */
 .Contact .background .ParentDiv .ContactDiv .Content {
-    /* width:70vw; */
-    /* height: max-content; */
-    /* border-style: dashed;
-    color: rgb(255, 255, 255); */
-
-    /* margin-top: 5%; */
     padding-left: 5%;
     padding-right: 5%;
-    font-size: x-large;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
+    word-wrap: break-word;   /* ✅ prevents long emails from breaking layout */
 }
 
+/* ✅ Contact details box with visible background */
 .Contact .background .ParentDiv .ContactDiv .ContactDetails {
     width: 100%;
     max-width: 560px;
-    /* height: 100px; */
-    border-style: groove;
+    background: rgba(0, 0, 0, 0.6); /* ✅ adds contrast for readability */
+    border: 1px solid #ee7f19;
+    border-radius: 8px;
     color: #ee7f19;
     padding: 2%;
-    /* font-size: larger; */
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,21 +76,16 @@ a {
     font-size: small;
 }
 
+/* ✅ Responsive icons */
 .iconsForContact {
     padding-left: 5%;
-
     filter: invert(1);
     cursor: pointer;
-    height: 20px;
-    /* width: 2px; */
-    filter: contrast(20px);
+    height: clamp(16px, 2vw, 24px);
     margin-right: 10px;
 }
 
-
 .Contact .background .ParentDiv .Footer {
-    /* border-style: dashed;
-    color: rgb(251, 251, 251); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +94,6 @@ a {
 
 .Contact .background .ParentDiv .Footer .BackTop {
     cursor: pointer;
-    /* height: 100px; */
     width: max-content;
     margin: 20px;
     margin-top: 10px;
@@ -115,58 +101,49 @@ a {
 }
 
 .Contact .background .ParentDiv .Footer .SocialMedia {
-    width: auto;
     align-items: center;
     justify-content: center;
     border-style: groove;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* ✅ icons will wrap on small screens */
+    gap: 10px;
     padding: 10px;
     margin-bottom: 20px;
-
-
 }
 
 .Contact .background .ParentDiv .Footer .Rights {
     font-size: small;
 }
 
-@media (max-width: 600px) {
+/* ✅ Tablet breakpoint */
+@media (max-width: 900px) {
+    .Contact .background .ParentDiv .ContactDiv {
+        flex-direction: column;
+    }
+}
 
+/* ✅ Mobile breakpoint */
+@media (max-width: 600px) {
     .Contact .background .heading {
         padding-top: 25%;
-        padding-left: 5%;
+        padding-left: 0;
+        align-items: center;
         font-size: large;
         font-weight: lighter;
     }
 
     .Contact .background .heading .line {
-        background-color: #ee7f19;
-        width: max-content;
-        height: 4px;
-        padding-left: 15%;
-        margin-left: 41%;
-        margin-top: -3.3%;
-    }
-
-    .Contact .background .ParentDiv .ContactDiv {
-        display: flex;
-        flex-direction: column;
+        margin-left: 0;
     }
 
     .Contact .background .ParentDiv .ContactDiv .Content {
         padding-left: 5%;
         padding-right: 5%;
         font-size: large;
-        line-height: 1.6;
     }
 
     .Contact .background .ParentDiv .ContactDiv .ContactDetails {
         margin: 6%;
-        margin-left: 6%;
         width: auto;
     }
-
-
-
 }
