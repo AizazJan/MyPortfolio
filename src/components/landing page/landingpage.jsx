@@ -24,7 +24,7 @@ const LandingPage = () => {
             <div className="containerButton">
               <div className="ButtonCV">
                 <a
-                  href="https://drive.google.com/drive/my-drive"
+                  href="https://drive.google.com/file/d/13lXBaNo5snQl-IqZ3WHJNxiWr07E508w/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ButtonCV"
